@@ -1,5 +1,3 @@
-namespace ConsoleApp1;
-
 public class AdditionOfPrimeNumbers
 {
     public static int Solution()

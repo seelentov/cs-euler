@@ -1,7 +1,3 @@
-using System;
-
-namespace ConsoleApp1;
-
 public class NumbersThatAreMultiplesOf3Or5
 {
     public static int Solution(int limit)

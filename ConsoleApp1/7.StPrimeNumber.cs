@@ -1,7 +1,3 @@
-using System;
-
-namespace ConsoleApp1;
-
 public class StPrimeNumber
 {
     public static int Solution(int index)

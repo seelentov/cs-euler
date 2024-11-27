@@ -1,8 +1,4 @@
 
-using System;
-
-namespace ConsoleApp1;
-
 public class TheDifferenceBetweenTheSumOfSquaresAndTheSquareOfTheSum
 {
     private static int Solution(int[] ints)

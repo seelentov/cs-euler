@@ -1,5 +1,3 @@
-namespace ConsoleApp1;
-
 public class LargestProductInASequence
 {
     public static string Solution()
@@ -12,11 +10,22 @@ public class LargestProductInASequence
         for (int i = 0; i < numbers.Length - 13; i++)
         {
             string numsPart = numbers[i..(i + 13)];
-            int numsPartSum = numsPart.Select(e => e - '0').Sum();
 
-            if (max < numsPartSum)
+            int numsPartAgg = 0;
+
+            if (numsPart.Contains("1") || numsPart.Contains("0"))
             {
-                max = sum;
+                numsPartAgg = numsPart.Aggregate(1, (acc, e) => acc * e);
+            }
+            else
+            {
+                numsPartAgg = numsPart.Select(e => e - '0').Sum();
+            }
+
+
+            if (max < numsPartAgg)
+            {
+                max = numsPartAgg;
                 maxValues = numsPart;
             }
         }

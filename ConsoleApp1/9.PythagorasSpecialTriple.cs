@@ -1,6 +1,3 @@
-namespace ConsoleApp1;
-
-
 public class PythagorasSpecialTriple
 {
     public static string? Solution()

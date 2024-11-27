@@ -1,7 +1,3 @@
-using System;
-
-namespace ConsoleApp1;
-
 public class GreatestPrimeDivisor
 {
     private static int Solution(int num)
