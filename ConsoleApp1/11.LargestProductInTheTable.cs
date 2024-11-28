@@ -1,6 +1,6 @@
 public class LargestProductInTheTable
 {
-    private static int Solution()
+    public static int Solution()
     {
         string[][] numsTable = [
 ["16","53","21","04","27","73","41","84","06","15","46","89","75","46","54","23","77","11","48","02"],

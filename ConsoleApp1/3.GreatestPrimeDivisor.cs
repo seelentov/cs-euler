@@ -1,6 +1,6 @@
 public class GreatestPrimeDivisor
 {
-    private static int Solution(int num)
+    public static int Solution(int num)
     {
         int res = 1;
 

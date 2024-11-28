@@ -1,7 +1,7 @@
 
 public class LeastMultiple
 {
-    private static int Solution()
+    public static int Solution()
     {
         int res = 0;
 
