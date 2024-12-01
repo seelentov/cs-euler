@@ -1,10 +1,10 @@
 public class BigSum
 {
-    public static string Solution()
-    {
-        int PARTS_COUNT = 100;
-        int PART_LENGTH = 50;
+    static int PARTS_COUNT = 100;
+    static int PART_LENGTH = 50;
 
+    static string GenerateNums()
+    {
         string nums = "";
 
         for (int k = 0; k < PARTS_COUNT; k++)
@@ -20,6 +20,12 @@ public class BigSum
             nums += part;
         }
 
+        return nums;
+    }
+    public static string Solution()
+    {
+        string nums = GenerateNums();
+
         int j = 0;
 
         string[] parts = new string[PARTS_COUNT];
@@ -30,7 +36,7 @@ public class BigSum
             j += PART_LENGTH;
         }
 
-        string result = "";
+        string result = "0";
 
         int step = 0;
 
@@ -46,7 +52,7 @@ public class BigSum
             int calcStep = result.Length - step;
             string calcPart = result[..calcStep];
 
-            result = ((calcPart != "" ? int.Parse(calcPart) : 0) + posSum).ToString() + result[calcStep..];
+            result = (int.Parse(calcPart) + posSum).ToString() + result[calcStep..];
 
             step++;
         }
