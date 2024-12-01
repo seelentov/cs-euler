@@ -27,8 +27,6 @@ public class TriangularNumberWithManyDivisors
                 }
             }
 
-            Console.WriteLine(acc + " " + dividerCount);
-
             if (dividerCount > 500)
             {
                 return acc;
