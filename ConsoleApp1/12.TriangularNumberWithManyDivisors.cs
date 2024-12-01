@@ -1,4 +1,4 @@
-public class TriangularNumberWithManyВivisors
+public class TriangularNumberWithManyDivisors
 {
     public static int Solution()
     {
